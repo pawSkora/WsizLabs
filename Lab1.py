@@ -85,6 +85,6 @@ Sp = float(input("Podaj średnie spalanie w l/100km: ")) #średnie spalanie
 Cp = float(input("Podaj aktualną cenę za litr paliwa w PLN: ")) #aktualna cena paliwa
 Zp = Trasa*Sp/100 #zużycie paliwa
 Kp = Zp*Cp     #koszt podróży
-print("Wylosowana długość trasy to:",Trasa)
-print("Zużycie paliwa na wylosowanej trasie to:",Zp,"l")
-print("Koszt podróży to:",Kp ,"zł")
+print(f"Wylosowana długość trasy to: {Trasa} km")
+print(f"Zużycie paliwa na wylosowanej trasie to: {Zp} l")
+print(f"Koszt podróży to: {Kp:.2f} zł")
