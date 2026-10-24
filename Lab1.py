@@ -79,9 +79,9 @@ print(f"Pole prostokąta o podanych bokach to {a*b} , a jego obwód to {2*(a+b)}
  #B Zmodyfikuj zadania 6 tak, aby wyświetlanie wyników wykorzystywało f-string.
 
 
-Trasa = float(input("Podaj długość trasy w km: "))
-Sp = float(input("Podaj średnie spalanie w l/100km: "))
-Zp = Trasa*Sp/100
-Kp = Zp*6.5
-print("Średnie spalanie na podanej trasie to:",Zp,"l")
+Trasa = float(input("Podaj długość trasy w km: "))      #dług. trasy
+Sp = float(input("Podaj średnie spalanie w l/100km: ")) #średnie spalanie
+Zp = Trasa*Sp/100 #zużycie paliwa
+Kp = Zp*6.5       #koszt podróży
+print("Zużycie paliwa na podanej trasie to:",Zp,"l")
 print("Koszt podróży to:",Kp ,"zł")
