@@ -1,3 +1,4 @@
+import random
 #Zad. 1:
 #A)
 #Sprawdź w interpreterze typ wyników określonych działań - type( x ) i wyjaśnij, co oznaczają poszczególne operatory?
@@ -79,9 +80,11 @@ print(f"Pole prostokąta o podanych bokach to {a*b} , a jego obwód to {2*(a+b)}
  #B Zmodyfikuj zadania 6 tak, aby wyświetlanie wyników wykorzystywało f-string.
 
 
-Trasa = float(input("Podaj długość trasy w km: "))      #dług. trasy
+Trasa = random.randint(1,1000)     #losowa dług. trasy z zakresu (1:1000)  w km
 Sp = float(input("Podaj średnie spalanie w l/100km: ")) #średnie spalanie
+Cp = float(input("Podaj aktualną cenę za litr paliwa w PLN: ")) #aktualna cena paliwa
 Zp = Trasa*Sp/100 #zużycie paliwa
-Kp = Zp*6.5       #koszt podróży
-print("Zużycie paliwa na podanej trasie to:",Zp,"l")
+Kp = Zp*Cp     #koszt podróży
+print("Wylosowana długość trasy to:",Trasa)
+print("Zużycie paliwa na wylosowanej trasie to:",Zp,"l")
 print("Koszt podróży to:",Kp ,"zł")
