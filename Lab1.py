@@ -88,3 +88,20 @@ Kp = Zp*Cp     #koszt podróży
 print(f"Wylosowana długość trasy to: {Trasa} km")
 print(f"Zużycie paliwa na wylosowanej trasie to: {Zp} l")
 print(f"Koszt podróży to: {Kp:.2f} zł")
+
+#9 prosty kalkulator
+x = float(input("Podaj pierwszą liczbę: "))
+y = float(input("Podaj drugą liczbę różną od 0: "))
+
+suma    = x+y
+różnica = x-y
+iloczyn = x*y
+iloraz  = x/y
+potęga  = x**y
+
+print(f"x+y  = {suma}")
+print(f"x-y  = {różnica}")
+print(f"x*y  = {iloczyn}")
+print(f"x/y  = {iloraz}")
+print(f"x**y = {potęga}")
+
