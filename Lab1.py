@@ -62,3 +62,26 @@ Cena = 39.99
 Rabat = 0.2
 CenaPoRabacie = Cena - Cena*Rabat
 print(f"Cena po rabacie to {CenaPoRabacie:.2f} PLN")
+
+#Napisz skrypt, który pobiera długości boków prostokąta, a następnie oblicza jego pole i obwód oraz wyświetla wyniki na ekranie.
+
+print("Skrypt obliczający pole i obwód prostokąta")
+a = float(input("Podaj długość boku a: "))
+b = float(input("Podaj długość boku b: "))
+print(f"Pole prostokąta o podanych bokach to {a*b} , a jego obwód to {2*(a+b)}")
+
+ # 6
+ # Napisz skrypt, który pobiera od użytkownika drogę pokonaną przez samochód oraz
+ # średnie spalanie (w litrach na 100 km) i wyświetli informację o przewidywanym zużyciu
+ # paliwa oraz o szacowanych kosztach podróży (cena paliwa 6.5 zł/l).
+ # A) Zmodyfikuj skrypt tak, aby długość przejechanej drogi była generowana losowo
+ # (liczba całkowita z zakresu ), a użytkownik podawał aktualną cenę paliwa za litr
+ #B Zmodyfikuj zadania 6 tak, aby wyświetlanie wyników wykorzystywało f-string.
+
+
+Trasa = float(input("Podaj długość trasy w km: "))
+Sp = float(input("Podaj średnie spalanie w l/100km: "))
+Zp = Trasa*Sp/100
+Kp = Zp*6.5
+print("Średnie spalanie na podanej trasie to:",Zp,"l")
+print("Koszt podróży to:",Kp ,"zł")
