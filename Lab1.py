@@ -50,7 +50,8 @@ imię  = "Jan"
 wiek  =  20
 wzrost = 178
 
-print(f"Nazywam się {imię} i mam {wiek} lat. Mój wzrost to {wzrost},cm")
+print(f"Nazywam się {imię} i mam {wiek} lat.")
+print(f"Mój wzrost to {wzrost} cm.")
 
 
 # 4
@@ -64,6 +65,7 @@ Rabat = 0.2
 CenaPoRabacie = Cena - Cena*Rabat
 print(f"Cena po rabacie to {CenaPoRabacie:.2f} PLN")
 
+#5
 #Napisz skrypt, który pobiera długości boków prostokąta, a następnie oblicza jego pole i obwód oraz wyświetla wyniki na ekranie.
 
 print("Skrypt obliczający pole i obwód prostokąta")
